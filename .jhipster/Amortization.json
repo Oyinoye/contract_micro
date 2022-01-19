@@ -1,0 +1,48 @@
+{
+  "name": "Amortization",
+  "fields": [
+    {
+      "fieldName": "amortizationID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currentMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "interest",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "principalAmount",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "principalBalance",
+      "fieldType": "Float"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "contract",
+      "otherEntityRelationshipName": "amortization",
+      "relationshipValidateRules": "required",
+      "relationshipName": "contract",
+      "otherEntityField": "contractID",
+      "ownerSide": true
+    }
+  ],
+  "javadoc": "Amortization",
+  "entityTableName": "amortization",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["maxContract"],
+  "databaseType": "sql",
+  "changelogDate": "20220115093519"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Contract",
+  "fields": [
+    {
+      "fieldName": "contractID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "championID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vehicleID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hpAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "duration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "balance",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "javadoc": "Contract",
+  "entityTableName": "contract",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["maxContract"],
+  "databaseType": "sql",
+  "changelogDate": "20220115093419"
+}

@@ -1,0 +1,29 @@
+{
+  "maxContractApp": {
+    "amortization": {
+      "home": {
+        "title": "Amortizations",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Amortization",
+        "createOrEditLabel": "Créer ou éditer un Amortization",
+        "notFound": "Aucun Amortization trouvé"
+      },
+      "created": "Un nouveau Amortization a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Amortization avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Amortization avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Amortization {{ id }} ?"
+      },
+      "detail": {
+        "title": "Amortization"
+      },
+      "id": "ID",
+      "amortizationID": "Amortization ID",
+      "currentMonth": "Current Month",
+      "interest": "Interest",
+      "principalAmount": "Principal Amount",
+      "principalBalance": "Principal Balance",
+      "contract": "Contract"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  maxcontract-app:
+    build: ../../..
+    container_name: maxcontract-app
+    environment:
+    ports:
+      - 8086:8086

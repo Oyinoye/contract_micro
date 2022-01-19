@@ -1,0 +1,61 @@
+/**
+ * JHipster JDL model for myGateway
+ */
+
+application {
+  config {
+    packageName ng.com.max
+    baseName maxContract
+    applicationType gateway
+    authenticationType jwt
+    clientFramework react
+    databaseType sql
+    serverPort 8086
+    devDatabaseType postgresql
+    dtoSuffix DTO
+    enableSwaggerCodegen true
+    entitySuffix Entity
+    languages [en, fr]
+    messageBroker kafka
+    nativeLanguage en
+    prodDatabaseType postgresql
+    serviceDiscoveryType eureka
+    testFrameworks [protractor, cucumber, gatling]
+
+  }
+  entities *
+}
+
+// ==============================
+// Entity definitions starts here
+// ==============================
+
+/** Contract  **/
+entity Contract {
+    contractID String
+    championID String
+    vehicleID String
+    hpAmount Integer
+    duration String
+    balance Integer
+    status String
+}
+
+/** Amortization **/
+entity Amortization {
+    amortizationID String
+    currentMonth String
+    interest Float
+    principalAmount Float
+    principalBalance Float
+}
+
+relationship OneToOne {
+    Amortization{contract(contractID) required} to Contract
+}
+
+
+// =======
+// Options
+// =======
+
