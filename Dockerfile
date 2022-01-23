@@ -4,7 +4,7 @@ FROM node:14-alpine
 
 WORKDIR /usr/node-app
 
-ENV NODE_SERVER_PORT=8081
+ENV NODE_SERVER_PORT=8080
 
 COPY . .
 
@@ -12,14 +12,14 @@ COPY . .
 
 WORKDIR server
 
-RUN npm install
+RUN npm install --force
 
 # install client deps
 
 WORKDIR ..
 
-RUN npm install
+RUN npm install --force
 
-EXPOSE 8081
+EXPOSE 8080
 
 ENTRYPOINT ["npm", "run", "start:app" ]
