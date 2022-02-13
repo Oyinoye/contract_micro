@@ -1,3 +1,4 @@
+import { KafkaModule } from './module/kafka.module';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './module/auth.module';
@@ -19,6 +20,7 @@ import { AmortizationModule } from './module/amortization.module';
     AuthModule,
     ContractModule,
     AmortizationModule,
+    KafkaModule,
     // jhipster-needle-add-entity-module-to-main - JHipster will add entity modules here, do not remove
   ],
   controllers: [
